@@ -6,6 +6,32 @@
     <title>Document</title>
 </head>
 <body>
-    Welcome you have succesfully routed to this page
+    Welcome you have succesfully routed to this page <br/><br/>
+
+    <div ng-controller="myController">
+
+        <input type="text" name="NAME" id="" ng-model="name" placeholder="NAME"><br/><br/>
+        <input type="text" name="Email ID" id="" ng-model="eid" placeholder="EMAIL"><br/><br/>
+        <input type="submit" ng-click="hello()">
+
+        <h1>{{msg1}}</h1>
+        <h1>{{msg2}}</h1>
+        <table class="table table-striped table-dark">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{{msg1}}</td>
+                <td>{{msg2}}</td>
+                </tr>
+              </tbody>
+          </table>
+        
+
+    </div>
 </body>
 </html>
